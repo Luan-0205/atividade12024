@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LearnLu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #222;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .topbar {
+      background-color: #c62828;
+      height: 50px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+    }
+
+    .topbar h1 {
+      color: white;
+      font-size: 24px;
+    }
+
+    .logo img {
+      width: 100px;
+      height: auto;
+    }
+
+    .search-bar {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    .search-bar input[type="text"] {
+      width: 300px;
+      padding: 8px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    .login-section {
+      display: flex;
+      align-items: center;
+  
+      padding: 5px;
+      border-radius: 5px;
+    }
+
+    .login-section input[type="text"],
+    .login-section input[type="password"] {
+      padding: 5px;
+      margin-right: 5px;
+      border-radius: 5px;
+      border: 1px solid #fff;
+      background-color: #c62828;
+      color: #fff;
+      transition: all 0.3s ease;
+    }
+
+    .login-section input[type="text"]:focus,
+    .login-section input[type="password"]:focus {
+      background-color: #fff;
+      color: #c62828;
+    }
+
+    .login-section input[type="submit"] {
+      background-color: #fff;
+      color: #c62828;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .login-section input[type="submit"]:hover {
+      background-color: #c62828;
+      color: #fff;
+    }
+
+    .tabs {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .tabs a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .tabs a:hover {
+      color: orange;
+      border-bottom: 2px solid orange;
+    }
+
+    nav {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      float: left;
+      width: 200px;
+      height: calc(100vh - 100px);
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      display: block;
+      padding: 10px 0;
+    }
+
+    .content {
+      margin-left: 220px;
+      padding: 20px;
+    }
+
+    .course {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 20px;
+      overflow: hidden;
+    }
+
+    .course img {
+      float: left;
+      margin-right: 10px;
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+    }
+
+    .course h3 {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+
+    .course p {
+      font-size: 16px;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      clear: both;
+    }
+
+    form {
+      background-color: #444;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: none;
+      background-color: #333;
+      color: #fff;
+    }
+
+    input[type="submit"] {
+      background-color: #c62828;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #a21e1e;
+    }
+
+    .start-test-button {
+      background-color: #c62828;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .start-test-button:hover {
+      background-color: #a21e1e;
+    }
+
+    .orange-text {
+      color: orange;
+    }
+
+    .vertical-image {
+      width: 200px;
+      height: 300px;
+    }
+
+    .sidebar {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      height: calc(100vh - 100px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .sidebar img {
+      width: 100px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="topbar">
+    <div class="logo">
+      <img src="img/image-removebg-preview (19).png" alt="LearnLu">
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="Pesquisar...">
+    </div>
+    <h1>LearnLu</h1>
+    <div class="login-section">
+     
+      <input type="submit" value="Login">
+    </div>
+  </div>
+  <div class="tabs">
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="cursos.html">Cursos</a>
+    <a href="contato.html">Contato</a>
+  </div>
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="cursos.html">Cursos</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+  <div class="content">
+    <section id="home">
+      <h2>Bem-vindo ao LearnLu</h2>
+      <p>Um site maneirão pra quem quer aprender JavaScript</p>
+    </section>
+    <section id="about">
+      <h2 class="orange-text">TESTE AGORA POR 1 MÊS GRÁTIS!</h2>
+      <p>Aproveite mais de 45 cursos totalmente gratuitos por um mês!</p>
+    </section>
+    <section id="courses">
+      <h2><button class="start-test-button">INICIAR TESTE GRATUITO</button></h2>
+      <div class="course">
+        <img src="img/binary-code-7213641_960_720.webp" alt="JavaScript Básico">
+        <h3>JavaScript Básico</h3>
+        <p>Aprenda os fundamentos da programação JavaScript.</p>
+      </div>
+      <div class="course">
+        <img src="img/Linguagen-de-programacao-2-shutterstock_1680857539.jpg.jpeg" alt="Manipulação do DOM">
+        <h3>Manipulação do DOM</h3>
+        <p>Explore como manipular o Document Object Model com JavaScript.</p>
+      </div>
+      <div class="course">
+        <img src="img/binary-code-7213641_960_720.webp" alt="JavaScript Básico">
+        <h3>JavaScript Básico</h3>
+        <p>Aprenda os fundamentos da programação JavaScript.</p>
+      </div>
+      <div class="course">
+        <img src="img/Linguagen-de-programacao-2-shutterstock_1680857539.jpg.jpeg" alt="Manipulação do DOM">
+        <h3>Manipulação do DOM</h3>
+        <p>Explore como manipular o Document Object Model com JavaScript.</p>
+      </div>
+      <div class="course">
+        <img src="img/programming-770x438.jpg.webp" alt="Requisições AJAX">
+        <h3>MÓDULO 2 JavaScript</h3>
+        <p>Domine o JavaScript assíncrono com requisições AJAX.</p>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>FALE CONOSCO!</h2>
+      <form>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="message">Mensagem:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+        <input type="submit" value="Enviar">
+      </form>
+    </section>
+  </div>
+  <footer>
+    &copy; 2024 LearnLu. Todos os direitos reservados.
+  </footer>
+</body>
+
+</html>

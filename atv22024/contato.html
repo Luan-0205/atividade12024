@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - LearnLu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #222;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .topbar {
+      background-color: #c62828;
+      height: 50px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+    }
+
+    .topbar h1 {
+      color: white;
+      font-size: 24px;
+    }
+
+    .logo img {
+      width: 100px;
+      height: auto;
+    }
+
+    .search-bar {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    .search-bar input[type="text"] {
+      width: 300px;
+      padding: 8px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    .tabs {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .tabs a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      transition: color 0.3s; 
+    }
+
+    .tabs a:hover {
+      color: orange; 
+    }
+
+    nav {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      float: left;
+      width: 200px;
+      height: calc(100vh - 100px);
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      display: block;
+      padding: 10px 0;
+    }
+
+    .content {
+      margin-left: 220px;
+      padding: 20px;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      clear: both;
+    }
+
+    
+    #contact-form {
+      background-color: #444;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    #contact-form label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    #contact-form input[type="text"],
+    #contact-form input[type="email"],
+    #contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: none;
+      background-color: #333;
+      color: #fff;
+    }
+
+    #contact-form input[type="submit"] {
+      background-color: #c62828;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #contact-form input[type="submit"]:hover {
+      background-color: #a21e1e;
+    }
+
+    .contact-info {
+      background-color: #555;
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .contact-info h3 {
+      margin-bottom: 10px;
+    }
+
+    .contact-info p {
+      margin-bottom: 5px;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+    }
+
+    .social-links a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+      font-size: 24px;
+    }
+
+    .social-links a:hover {
+      color: orange; 
+    }
+  </style>
+</head>
+
+<body>
+  <div class="topbar">
+    <div class="logo">
+      <img src="img/image-removebg-preview (19).png" alt="LearnLu">
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="Pesquisar...">
+    </div>
+    <h1>LearnLu</h1>
+  </div>
+  <div class="tabs">
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="cursos.html">Cursos</a>
+    <a href="contato.html">Contato</a>
+  </div>
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="cursos.html">Cursos</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+  <div class="content">
+    <section id="contact-form">
+      <h2>FALE CONOSCO!</h2>
+      <form>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="message">Mensagem:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+        <input type="submit" value="Enviar">
+      </form>
+    </section>
+    <section class="contact-info">
+      <h3>Informações de Contato</h3>
+      <p>E-mail: contato@learnlu.com</p>
+      <p>Telefone: (11) 93478-6678</p>
+      <p>Endereço: Rua das Programações, 123</p>
+    </section>
+  </div>
+  <footer>
+    &copy; 2024 LearnLu. Todos os direitos reservados.
+  </footer>
+</body>
+
+</html>

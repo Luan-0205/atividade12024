@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cursos - LearnLu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #222;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .topbar {
+      background-color: #c62828;
+      height: 50px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+    }
+
+    .topbar h1 {
+      color: white;
+      font-size: 24px;
+    }
+
+    .logo img {
+      width: 100px;
+      height: auto;
+    }
+
+    .search-bar {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    .search-bar input[type="text"] {
+      width: 300px;
+      padding: 8px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    .tabs {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .tabs a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      transition: border-color 0.3s; 
+    }
+
+    .tabs a:hover {
+      border-bottom: 2px solid orange; 
+    }
+
+    nav {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      float: left;
+      width: 200px;
+      height: calc(100vh - 100px);
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      display: block;
+      padding: 10px 0;
+    }
+
+    .content {
+      margin-left: 220px;
+      padding: 20px;
+    }
+
+    .course {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 20px;
+      overflow: hidden;
+    }
+
+    .course img {
+      float: left;
+      margin-right: 10px;
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+    }
+
+    .course h3 {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+
+    .course p {
+      font-size: 16px;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      clear: both;
+    }
+
+    .start-test-button,
+    .continue-course-button {
+      background-color: #c62828;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .start-test-button:hover,
+    .continue-course-button:hover {
+      background-color: #a21e1e;
+    }
+
+    .vertical-images {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .vertical-image {
+      width: 100px;
+      height: auto;
+      margin-right: 10px;
+      border: 1px solid #ccc; 
+      border-radius: 5px; 
+      padding: 5px;
+    }
+
+    .vertical-image-text {
+      text-align: center;
+      font-size: 14px;
+      border: 1px solid #ccc; 
+      border-radius: 5px; 
+      padding: 5px; 
+      margin-top: 10px; 
+    }
+    .vertical-images div {
+      margin-bottom: 20px;
+    }
+
+    .related-courses {
+      color: orange;
+      text-align: center;
+      margin-top: 20px;
+      font-size: 24px;
+    }
+
+    .related-text {
+      color: orange;
+      font-size: 20px;
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="topbar">
+    <div class="logo">
+      <img src="img/image-removebg-preview (19).png" alt="LearnLu">
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="Pesquisar...">
+    </div>
+    <h1>LearnLu</h1>
+  </div>
+  <div class="tabs">
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="cursos.html">Cursos</a>
+    <a href="contato.html">Contato</a>
+  </div>
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="cursos.html">Cursos</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+  <div class="content">
+    <section id="courses">
+      <h2> Seus Cursos</h2>
+      <div class="course">
+        <img src="img/3343387-desktop-source-code-and-wallpaper-by-coding-and-programming-gratis-foto.jpg" alt="LearnLu">
+        <h3>Lógica de Programação</h3>
+        <p></p>
+        <button class="continue-course-button">Continuar Curso</button>
+      </div>
+      <div class="course">
+        <img src="img/ffapu6nxbihe77kajjmeh-e1674740233107.png" alt="LearnLu">
+        <h3>Progamando com Jogos</h3>
+        <button class="continue-course-button">Continuar Curso</button>
+      </div>
+      <div class="course">
+        <img src="img/programacao-scaled.jpg" alt="LearnLu">
+        <h3>Progamando Interfaces</h3>
+        <button class="continue-course-button">Continuar Curso</button>
+      </div>
+      <p class="related-text">VOCÊ PODE GOSTAR TAMBÉM!</p>
+      <div class="vertical-images">
+        <div>
+          <img src="img/images (1).jpg" alt="LearnLu" class="vertical-image">
+          <p class="vertical-image-text">Iniciando Sites</p>
+        </div>
+        <div>
+          <img src="img/images (2).jpg" alt="LearnLu" class="vertical-image">
+          <p class="vertical-image-text">Programação e Algoritmo</p>
+        </div>
+        <div>
+          <img src="img/images.jpg" alt="LearnLu" class="vertical-image">
+          <p class="vertical-image-text">Fazendo Código</p>
+        </div>
+        <div>
+          <img src="img/images (3).jpg" alt="LearnLu" class="vertical-image">
+          <p class="vertical-image-text">Programação sem Lógica</p>
+        </div>
+      </div>
+      
+    </section>
+  </div>
+  <footer>
+    &copy; 2024 LearnLu. Todos os direitos reservados.
+  </footer>
+</body>
+
+</html>
